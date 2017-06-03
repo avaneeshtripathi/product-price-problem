@@ -1,0 +1,98 @@
+EfficientBazaar Technical Test
+
+We have a csv file that looks like this
+
+
+
+Id,	Vendor,		Product Name,			Product Code,	Unit,	Weight,	Price
+
+1,	Vendor1,	Coriander Leaves (April-Nov),	3736,		Kg,	3,	90
+
+2,	Vendor1,	Mint Leaves 500 Gm,		4371,		Grams,	500,	27.5
+3,	Vendor1,	Ginger 500 Gm,			4356,		Grams,	500,	29.5
+
+4,	Vendor1,	Lemon 500 Gm,			4365,		Grams,	500,	32.5
+
+5,	Vendor2,	Coriander Leaves (April-Nov),	3736,		Kg,	3,	80
+
+6,	Vendor2,	Mint Leaves 500 Gm,		4371,		Grams,	500,	27.5
+
+7,	Vendor2,	Ginger 500 Gm,			4356,		Grams,	500,	30
+
+8,	Vendor2,	Lemon 500 Gm,			4365,		Grams,	500,	31
+
+9,	Vendor3,	Coriander Leaves (April-Nov),	3736,		Kg,	3,	88
+
+10,	Vendor3,	Mint Leaves 500 Gm,		4371,		Grams,	500,	27.3
+
+11,	Vendor3,	Ginger 500 Gm,			4356,		Grams,	500,	29.7
+
+12,	Vendor3,	Lemon 500 Gm,			4365,		Grams,	500,	34.5
+..
+..
+..
+
+
+
+i.e., product list from multiple vendors and their price offerrings
+
+.
+
+Unfortunately, the file is consolidated and we need a better way to extract useful information.
+ We would like to be able to generate a product list based on:
+
+	- cheapest prices
+
+	- expensive prices
+	- get cheapest or expensive price list only for given product IDs
+
+
+
+For example, for cheapest prices, we would get a list like:
+
+
+3,	Vendor1,	Ginger 500 Gm,			4356,		Grams,	500,	29.5
+
+5,	Vendor2,	Coriander Leaves (April-Nov),	3736,		Kg,	3,	80
+
+8,	Vendor2,	Lemon 500 Gm,			4365,		Grams,	500,	31
+10,	Vendor3,	Mint Leaves 500 Gm,		4371,		Grams,	500,	27.3
+
+
+
+
+- You can do this in any language, Python,PHP or Golang preferred
+
+- Assumptions should be justified when submitting your solution
+
+- A simple script would do, doesn't have to be a GUI or Webapp
+
+- When we run your solution, make sure it prints 3 lists on stdout:
+
+	- cheapest prices
+
+	- expensive prices
+
+	- cheapest prices for products [3736, 4356, 3732, 3746, 3759, 3719, 3740, 4341]
+
+
+- You should provide clear instructions to run your solution
+
+
+
+Some other information:
+
+	
+- thoughtful architecture of code. **It should be scalable, easily extensible.**
+
+	- documentation and comments
+
+	- tests! tests! tests!
+
+	- it would be great if you could make use of object oriented paradigms.
+
+
+- through this challenge, apart from the correct outputs, we are also looking to evaluate how you come to build the architecture and your problem-solving capabilities.
+
+
+- **please think through your solution carefully. We're looking for good architecture and overall extensibility.**
