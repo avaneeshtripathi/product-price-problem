@@ -1,5 +1,3 @@
-EfficientBazaar Technical Test
-
 We have a csv file that looks like this
 
 
